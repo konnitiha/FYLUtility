@@ -25,6 +25,7 @@
 		2A026ADC1EAEF6870005E4A5 /* MyDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A026ACE1EAEF6870005E4A5 /* MyDownload.m */; };
 		2A026ADD1EAEF6870005E4A5 /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A026AD01EAEF6870005E4A5 /* UIButton+ImageTitleSpacing.m */; };
 		2A026ADE1EAEF6870005E4A5 /* FYLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A026AD21EAEF6870005E4A5 /* FYLUtility.m */; };
+		2AB28DC21EE00F7E0007386A /* FYLLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28DC11EE00F7E0007386A /* FYLLocationHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,8 @@
 		2A026AD11EAEF6870005E4A5 /* FYLUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLUtility.h; sourceTree = "<group>"; };
 		2A026AD21EAEF6870005E4A5 /* FYLUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLUtility.m; sourceTree = "<group>"; };
 		2A026ADF1EAEF6AF0005E4A5 /* FYLHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYLHeader.h; sourceTree = "<group>"; };
+		2AB28DC01EE00F7E0007386A /* FYLLocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLLocationHelper.h; sourceTree = "<group>"; };
+		2AB28DC11EE00F7E0007386A /* FYLLocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLLocationHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 				2A026ACE1EAEF6870005E4A5 /* MyDownload.m */,
 				2A026ACF1EAEF6870005E4A5 /* UIButton+ImageTitleSpacing.h */,
 				2A026AD01EAEF6870005E4A5 /* UIButton+ImageTitleSpacing.m */,
+				2AB28DC01EE00F7E0007386A /* FYLLocationHelper.h */,
+				2AB28DC11EE00F7E0007386A /* FYLLocationHelper.m */,
 			);
 			path = FYLTool;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 				2A026AD41EAEF6870005E4A5 /* FYLPopView.m in Sources */,
 				2A026AD71EAEF6870005E4A5 /* NSDictionary+FYLLog.m in Sources */,
 				2A026AD31EAEF6870005E4A5 /* FYLBtn.m in Sources */,
+				2AB28DC21EE00F7E0007386A /* FYLLocationHelper.m in Sources */,
 				2A026A7F1EAED8A60005E4A5 /* main.m in Sources */,
 				2A026ADC1EAEF6870005E4A5 /* MyDownload.m in Sources */,
 				2A026AD81EAEF6870005E4A5 /* NSString+FYL.m in Sources */,

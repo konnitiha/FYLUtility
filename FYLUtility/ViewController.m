@@ -23,12 +23,9 @@
     viewCenter.backgroundColor = [UIColor redColor];
     [self.view addSubview:viewCenter];
     
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    [viewCenter fyl_FillReferView:self.view insets:UIEdgeInsetsMake(10, 20, 30, 40)];
+    
 }
 
 
