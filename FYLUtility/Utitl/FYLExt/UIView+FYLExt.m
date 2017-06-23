@@ -179,6 +179,39 @@
 
 
 
+
+@implementation UIView(Animation)
+
+- (void)addAnimationWithType:(FYL_AnimatonType)animationType WithSubtype:(FYL_AnimatonSubType)subType
+{
+    NSArray *types = @[@"kCATransitionFade",@"kCATransitionPush",@"kCATransitionReveal",@"kCATransitionMoveIn",@"cube",@"suckEffect",@"oglFlip",@"rippleEffect",@"pageCurl",@"pageUnCurl",@"cameraIrisHollowOpen",@"cameraIrisHollowClose"];
+    NSArray *subTypes = @[kCATransitionFromTop,kCATransitionFromBottom,kCATransitionFromLeft,kCATransitionFromRight];
+    
+    //创建CATransition对象
+    CATransition *animation = [CATransition animation];
+    
+    //设置运动时间
+    animation.duration = 0.2;
+    
+    //设置运动type
+    animation.type = types[animationType];
+    
+    //设置子类型
+    animation.subtype = subTypes[subType];
+    
+    //设置运动速度曲线
+    animation.timingFunction = UIViewAnimationOptionCurveEaseInOut;
+    
+    [self.layer addAnimation:animation forKey:@"animation"];
+    
+}
+
+@end
+
+
+
+
+
 @implementation UIView (AutoLayout)
 
 

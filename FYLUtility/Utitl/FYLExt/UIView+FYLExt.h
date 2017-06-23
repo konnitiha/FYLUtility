@@ -58,6 +58,34 @@
 @end
 
 
+typedef NS_ENUM(NSUInteger, FYL_AnimatonType) {
+    FYL_AnimatonTypeFade,
+    FYL_AnimatonTypePush,
+    FYL_AnimatonTypeReveal,
+    FYL_AnimatonTypeMoveIn,
+    FYL_AnimatonTypeCube,
+    FYL_AnimatonTypeSuckEffect,
+    FYL_AnimatonTypeOglFlip,
+    FYL_AnimatonTypeErippleEffect,
+    FYL_AnimatonTypePageCurl,
+    FYL_AnimatonTypePageUnCurl,
+    FYL_AnimatonTypeCameraIrisHollowOpen,
+    FYL_AnimatonTypeCameraIrisHollowClose,
+};
+
+typedef NS_ENUM(NSUInteger, FYL_AnimatonSubType) {
+    FYL_AnimatonSubTypeFromTop,
+    FYL_AnimatonSubTypeFromBottom,
+    FYL_AnimatonSubTypeFromLeft,
+    FYL_AnimatonSubTypeFromRight,
+};
+
+@interface UIView (Animation)
+
+- (void)addAnimationWithType:(FYL_AnimatonType)animationType WithSubtype:(FYL_AnimatonSubType)subType;
+
+@end
+
 typedef NS_ENUM(NSUInteger, FYL_AlignType) {
     FYL_AlignTypeTopLeft,
     FYL_AlignTypeTopRight,
