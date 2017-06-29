@@ -314,7 +314,7 @@
         if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
             pickerImage.sourceType = UIImagePickerControllerSourceTypeCamera;
             pickerImage.showsCameraControls = YES;
-            pickerImage.cameraDevice = UIImagePickerControllerCameraDeviceFront;
+            pickerImage.cameraDevice = UIImagePickerControllerCameraDeviceRear;
             pickerImage.delegate = self;
             pickerImage.allowsEditing = YES;
             [[[UIApplication sharedApplication].keyWindow rootViewController] presentViewController:pickerImage animated:YES completion:nil];
@@ -325,14 +325,17 @@
         
     }else
     {
-        if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+        if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum]) {
+            pickerImage.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+        } else if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
             pickerImage.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-            pickerImage.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:pickerImage.sourceType];
-            pickerImage.delegate = self;
-            pickerImage.allowsEditing = YES;
-            [[[UIApplication sharedApplication].keyWindow rootViewController] presentViewController:pickerImage animated:YES completion:nil];
         }
+        pickerImage.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:pickerImage.sourceType];
+        pickerImage.delegate = self;
+        pickerImage.allowsEditing = YES;
+        [[[UIApplication sharedApplication].keyWindow rootViewController] presentViewController:pickerImage animated:YES completion:nil];
     }
+    
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info

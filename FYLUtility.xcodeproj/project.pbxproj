@@ -26,6 +26,9 @@
 		2A026ADD1EAEF6870005E4A5 /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A026AD01EAEF6870005E4A5 /* UIButton+ImageTitleSpacing.m */; };
 		2A026ADE1EAEF6870005E4A5 /* FYLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A026AD21EAEF6870005E4A5 /* FYLUtility.m */; };
 		2AB28DC21EE00F7E0007386A /* FYLLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB28DC11EE00F7E0007386A /* FYLLocationHelper.m */; };
+		2ACA01FA1F04FCC100E21E43 /* UIFont+PingFang.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA01F71F04FCC100E21E43 /* UIFont+PingFang.m */; };
+		2ACA01FB1F04FCC100E21E43 /* UILabel+FYLColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA01F91F04FCC100E21E43 /* UILabel+FYLColor.m */; };
+		2ACA01FE1F04FD3700E21E43 /* FYLQiNiuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA01FD1F04FD3700E21E43 /* FYLQiNiuHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,12 @@
 		2A026ADF1EAEF6AF0005E4A5 /* FYLHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYLHeader.h; sourceTree = "<group>"; };
 		2AB28DC01EE00F7E0007386A /* FYLLocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLLocationHelper.h; sourceTree = "<group>"; };
 		2AB28DC11EE00F7E0007386A /* FYLLocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLLocationHelper.m; sourceTree = "<group>"; };
+		2ACA01F61F04FCC100E21E43 /* UIFont+PingFang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+PingFang.h"; sourceTree = "<group>"; };
+		2ACA01F71F04FCC100E21E43 /* UIFont+PingFang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+PingFang.m"; sourceTree = "<group>"; };
+		2ACA01F81F04FCC100E21E43 /* UILabel+FYLColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FYLColor.h"; sourceTree = "<group>"; };
+		2ACA01F91F04FCC100E21E43 /* UILabel+FYLColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FYLColor.m"; sourceTree = "<group>"; };
+		2ACA01FC1F04FD3700E21E43 /* FYLQiNiuHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLQiNiuHelper.h; sourceTree = "<group>"; };
+		2ACA01FD1F04FD3700E21E43 /* FYLQiNiuHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLQiNiuHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +158,10 @@
 		2A026AC11EAEF6870005E4A5 /* FYLExt */ = {
 			isa = PBXGroup;
 			children = (
+				2ACA01F61F04FCC100E21E43 /* UIFont+PingFang.h */,
+				2ACA01F71F04FCC100E21E43 /* UIFont+PingFang.m */,
+				2ACA01F81F04FCC100E21E43 /* UILabel+FYLColor.h */,
+				2ACA01F91F04FCC100E21E43 /* UILabel+FYLColor.m */,
 				2A026AC21EAEF6870005E4A5 /* NSDictionary+FYLLog.h */,
 				2A026AC31EAEF6870005E4A5 /* NSDictionary+FYLLog.m */,
 				2A026AC41EAEF6870005E4A5 /* NSString+FYL.h */,
@@ -166,6 +179,8 @@
 		2A026ACC1EAEF6870005E4A5 /* FYLTool */ = {
 			isa = PBXGroup;
 			children = (
+				2ACA01FC1F04FD3700E21E43 /* FYLQiNiuHelper.h */,
+				2ACA01FD1F04FD3700E21E43 /* FYLQiNiuHelper.m */,
 				2A026ACD1EAEF6870005E4A5 /* MyDownload.h */,
 				2A026ACE1EAEF6870005E4A5 /* MyDownload.m */,
 				2A026ACF1EAEF6870005E4A5 /* UIButton+ImageTitleSpacing.h */,
@@ -255,12 +270,15 @@
 				2A026ADD1EAEF6870005E4A5 /* UIButton+ImageTitleSpacing.m in Sources */,
 				2A026AD61EAEF6870005E4A5 /* FylTextField.m in Sources */,
 				2A026AD91EAEF6870005E4A5 /* UIButton+FYLExt.m in Sources */,
+				2ACA01FA1F04FCC100E21E43 /* UIFont+PingFang.m in Sources */,
 				2A026A821EAED8A60005E4A5 /* AppDelegate.m in Sources */,
 				2A026AD41EAEF6870005E4A5 /* FYLPopView.m in Sources */,
 				2A026AD71EAEF6870005E4A5 /* NSDictionary+FYLLog.m in Sources */,
+				2ACA01FE1F04FD3700E21E43 /* FYLQiNiuHelper.m in Sources */,
 				2A026AD31EAEF6870005E4A5 /* FYLBtn.m in Sources */,
 				2AB28DC21EE00F7E0007386A /* FYLLocationHelper.m in Sources */,
 				2A026A7F1EAED8A60005E4A5 /* main.m in Sources */,
+				2ACA01FB1F04FCC100E21E43 /* UILabel+FYLColor.m in Sources */,
 				2A026ADC1EAEF6870005E4A5 /* MyDownload.m in Sources */,
 				2A026AD81EAEF6870005E4A5 /* NSString+FYL.m in Sources */,
 				2A026ADA1EAEF6870005E4A5 /* UIColor+FYLExt.m in Sources */,

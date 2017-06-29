@@ -22,6 +22,8 @@ typedef void(^fyl_sheet_action_handler)(NSInteger index);
 //+ (void)addAFHTTPRequestOperationToActivityIndicatorView:(AFHTTPRequestOperation *)op;
 + (void)hideActivityIndicatorView;
 
++ (void)showMessage:(NSString *)msg;
+
 + (void)showActionSheetControllerWithTitle:(NSString *)title message:(NSString *)message destructiveBtnTitle:(NSString *)destructiveTitle otherBtnTitles:(NSArray *)titles action:(fyl_sheet_action_handler)block inVc:(UIViewController *)vc;
 + (void)showAlertControllerWithTitle:(NSString *)title message:(NSString *)message sureBtnTitle:(NSString *)sureTitle otherBtnTitles:(NSArray *)titles action:(fyl_sheet_action_handler)block inVc:(UIViewController *)vc;
 @end

@@ -95,6 +95,9 @@
  */
 #import "FYLUtility.h"
 
+//是否替换系统字体为PingFang SC
+#define kChangeFont
+
 /*常用宏定义,以后添加*/
 
 #endif /* FYLHeader_h */

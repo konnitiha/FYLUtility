@@ -87,6 +87,12 @@ typedef void (^ChooseImageBlock)(UIImage *image);
  */
 + (UIViewController *)createViewControllerWithVcName:(NSString *)vcName;
 
+/**
+ 选择照片
+ 在 info.plist里面添加Localized resources can be mixed,YES 表示是否允许应用程序获取框架库内语言。
+ 
+ @param block 照片选择完成回调
+ */
 - (void)chooseImage:(ChooseImageBlock)block;
 @end
 

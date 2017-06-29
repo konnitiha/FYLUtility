@@ -40,6 +40,19 @@
 @end
 
 @implementation FYLPopView
++ (void)showMessage:(NSString *)msg{
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2 - 135, SCREEN_HEIGHT - 90, 270, 39)];
+    label.backgroundColor = FYLRGBA(0, 0, 0, 0.65);
+    label.fyl_cornerRadius = 4;
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor whiteColor];
+    label.text = msg;
+    label.font = [UIFont systemFontOfSize:14];
+    
+    [label performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:1];
+    [[UIApplication sharedApplication].keyWindow addSubview:label];
+}
+
 + (void)showActionSheetControllerWithTitle:(NSString *)title message:(NSString *)message destructiveBtnTitle:(NSString *)destructiveTitle otherBtnTitles:(NSArray *)titles action:(fyl_sheet_action_handler)block inVc:(UIViewController *)vc
 {
     UIAlertController *sheetController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
