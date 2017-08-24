@@ -10,12 +10,29 @@
 #import <UIKit/UIKit.h>
 #import<CommonCrypto/CommonDigest.h>
 
+
+//分类
 #import "UIView+FYLExt.h"
+#import "UIView+Screenshot.h"
+#import "UIWindow+Screenshot.h"
+#import "UILabel+FYLColor.h"
 #import "UIColor+FYLExt.h"
 #import "UIButton+FYLExt.h"
+#import "UIButton+ImageTitleSpacing.h"
 #import "NSString+FYL.h"
+#import "UIFont+PingFang.h"
+#import "NSDictionary+FYLLog.h"
+
+
+//自定义
 #import "FylTextField.h"
 #import "FYLPopView.h"
+#import "FYLBtn.h"
+
+//工具
+#import "FYLQiNiuHelper.h"
+#import "MyDownload.h"
+#import "FYLLocationHelper.h"
 
 #define FYLRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 
@@ -94,6 +111,13 @@ typedef void (^ChooseImageBlock)(UIImage *image);
  @param block 照片选择完成回调
  */
 - (void)chooseImage:(ChooseImageBlock)block;
+
+/**
+ 全屏截图
+
+ @return UIImage对象
+ */
+UIImage *getImageWithFullScreenshot(void);
 @end
 
 
