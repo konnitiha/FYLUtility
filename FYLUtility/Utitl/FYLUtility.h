@@ -28,6 +28,7 @@
 #import "FylTextField.h"
 #import "FYLPopView.h"
 #import "FYLBtn.h"
+#import "FYLLabel.h"
 
 //工具
 #import "FYLQiNiuHelper.h"

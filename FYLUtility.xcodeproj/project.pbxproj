@@ -31,6 +31,7 @@
 		2ACA01FA1F04FCC100E21E43 /* UIFont+PingFang.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA01F71F04FCC100E21E43 /* UIFont+PingFang.m */; };
 		2ACA01FB1F04FCC100E21E43 /* UILabel+FYLColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA01F91F04FCC100E21E43 /* UILabel+FYLColor.m */; };
 		2ACA01FE1F04FD3700E21E43 /* FYLQiNiuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA01FD1F04FD3700E21E43 /* FYLQiNiuHelper.m */; };
+		848D30F22085DBCC0097E149 /* FYLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D30F12085DBCC0097E149 /* FYLLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,8 @@
 		2ACA01F91F04FCC100E21E43 /* UILabel+FYLColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FYLColor.m"; sourceTree = "<group>"; };
 		2ACA01FC1F04FD3700E21E43 /* FYLQiNiuHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLQiNiuHelper.h; sourceTree = "<group>"; };
 		2ACA01FD1F04FD3700E21E43 /* FYLQiNiuHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLQiNiuHelper.m; sourceTree = "<group>"; };
+		848D30F02085DBCC0097E149 /* FYLLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYLLabel.h; sourceTree = "<group>"; };
+		848D30F12085DBCC0097E149 /* FYLLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYLLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 			children = (
 				2A026ABA1EAEF6870005E4A5 /* FYLBtn.h */,
 				2A026ABB1EAEF6870005E4A5 /* FYLBtn.m */,
+				848D30F02085DBCC0097E149 /* FYLLabel.h */,
+				848D30F12085DBCC0097E149 /* FYLLabel.m */,
 				2A026ABC1EAEF6870005E4A5 /* FYLPopView.h */,
 				2A026ABD1EAEF6870005E4A5 /* FYLPopView.m */,
 				2A026ABE1EAEF6870005E4A5 /* FYLPopView.xib */,
@@ -276,6 +281,7 @@
 			files = (
 				2A026ADB1EAEF6870005E4A5 /* UIView+FYLExt.m in Sources */,
 				2A026A851EAED8A60005E4A5 /* ViewController.m in Sources */,
+				848D30F22085DBCC0097E149 /* FYLLabel.m in Sources */,
 				2A026ADE1EAEF6870005E4A5 /* FYLUtility.m in Sources */,
 				2A0E37871F4E608E00F42600 /* UIView+Screenshot.m in Sources */,
 				2A026AD61EAEF6870005E4A5 /* FylTextField.m in Sources */,
