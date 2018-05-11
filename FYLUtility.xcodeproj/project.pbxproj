@@ -31,7 +31,10 @@
 		2ACA01FA1F04FCC100E21E43 /* UIFont+PingFang.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA01F71F04FCC100E21E43 /* UIFont+PingFang.m */; };
 		2ACA01FB1F04FCC100E21E43 /* UILabel+FYLColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA01F91F04FCC100E21E43 /* UILabel+FYLColor.m */; };
 		2ACA01FE1F04FD3700E21E43 /* FYLQiNiuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA01FD1F04FD3700E21E43 /* FYLQiNiuHelper.m */; };
+		8461CDE22086E00B00A1F584 /* FYLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8461CDE12086E00B00A1F584 /* FYLButton.m */; };
 		848D30F22085DBCC0097E149 /* FYLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D30F12085DBCC0097E149 /* FYLLabel.m */; };
+		84952F1B20A546D10020969A /* NSObject+FYLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84952F1A20A546D10020969A /* NSObject+FYLModel.m */; };
+		84952F1E20A549BC0020969A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 84952F1D20A549BC0020969A /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,8 +84,14 @@
 		2ACA01F91F04FCC100E21E43 /* UILabel+FYLColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FYLColor.m"; sourceTree = "<group>"; };
 		2ACA01FC1F04FD3700E21E43 /* FYLQiNiuHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLQiNiuHelper.h; sourceTree = "<group>"; };
 		2ACA01FD1F04FD3700E21E43 /* FYLQiNiuHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLQiNiuHelper.m; sourceTree = "<group>"; };
+		8461CDE02086E00B00A1F584 /* FYLButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYLButton.h; sourceTree = "<group>"; };
+		8461CDE12086E00B00A1F584 /* FYLButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYLButton.m; sourceTree = "<group>"; };
 		848D30F02085DBCC0097E149 /* FYLLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYLLabel.h; sourceTree = "<group>"; };
 		848D30F12085DBCC0097E149 /* FYLLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYLLabel.m; sourceTree = "<group>"; };
+		84952F1920A546D10020969A /* NSObject+FYLModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FYLModel.h"; sourceTree = "<group>"; };
+		84952F1A20A546D10020969A /* NSObject+FYLModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FYLModel.m"; sourceTree = "<group>"; };
+		84952F1C20A549BC0020969A /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		84952F1D20A549BC0020969A /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +128,8 @@
 				2A026A811EAED8A60005E4A5 /* AppDelegate.m */,
 				2A026A831EAED8A60005E4A5 /* ViewController.h */,
 				2A026A841EAED8A60005E4A5 /* ViewController.m */,
+				84952F1C20A549BC0020969A /* Person.h */,
+				84952F1D20A549BC0020969A /* Person.m */,
 				2A026AB81EAEF6870005E4A5 /* Utitl */,
 				2A026A861EAED8A60005E4A5 /* Main.storyboard */,
 				2A026A891EAED8A60005E4A5 /* Assets.xcassets */,
@@ -155,6 +166,8 @@
 			children = (
 				2A026ABA1EAEF6870005E4A5 /* FYLBtn.h */,
 				2A026ABB1EAEF6870005E4A5 /* FYLBtn.m */,
+				8461CDE02086E00B00A1F584 /* FYLButton.h */,
+				8461CDE12086E00B00A1F584 /* FYLButton.m */,
 				848D30F02085DBCC0097E149 /* FYLLabel.h */,
 				848D30F12085DBCC0097E149 /* FYLLabel.m */,
 				2A026ABC1EAEF6870005E4A5 /* FYLPopView.h */,
@@ -189,6 +202,8 @@
 				2A0E37861F4E608E00F42600 /* UIView+Screenshot.m */,
 				2A0E37821F4E600B00F42600 /* UIWindow+Screenshot.h */,
 				2A0E37831F4E600B00F42600 /* UIWindow+Screenshot.m */,
+				84952F1920A546D10020969A /* NSObject+FYLModel.h */,
+				84952F1A20A546D10020969A /* NSObject+FYLModel.m */,
 			);
 			path = FYLExt;
 			sourceTree = "<group>";
@@ -282,6 +297,7 @@
 				2A026ADB1EAEF6870005E4A5 /* UIView+FYLExt.m in Sources */,
 				2A026A851EAED8A60005E4A5 /* ViewController.m in Sources */,
 				848D30F22085DBCC0097E149 /* FYLLabel.m in Sources */,
+				8461CDE22086E00B00A1F584 /* FYLButton.m in Sources */,
 				2A026ADE1EAEF6870005E4A5 /* FYLUtility.m in Sources */,
 				2A0E37871F4E608E00F42600 /* UIView+Screenshot.m in Sources */,
 				2A026AD61EAEF6870005E4A5 /* FylTextField.m in Sources */,
@@ -296,6 +312,8 @@
 				2A0E37841F4E600B00F42600 /* UIWindow+Screenshot.m in Sources */,
 				2A026A7F1EAED8A60005E4A5 /* main.m in Sources */,
 				2ACA01FB1F04FCC100E21E43 /* UILabel+FYLColor.m in Sources */,
+				84952F1E20A549BC0020969A /* Person.m in Sources */,
+				84952F1B20A546D10020969A /* NSObject+FYLModel.m in Sources */,
 				2A026ADC1EAEF6870005E4A5 /* MyDownload.m in Sources */,
 				2A026AD81EAEF6870005E4A5 /* NSString+FYL.m in Sources */,
 				2A0E378A1F4E617F00F42600 /* UIButton+ImageTitleSpacing.m in Sources */,

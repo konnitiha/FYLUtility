@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "FYLHeader.h"
-
+#import "Person.h"
 @interface ViewController ()
 
 @end
@@ -24,10 +24,13 @@
     [self.view addSubview:viewCenter];
     
     
-    FYLLabel *label = [[FYLLabel alloc] initWithFrame:CGRectMake(12, 244, 200, 40)];
+    FYLLabel *label = [[FYLLabel alloc] init];
     label.backgroundColor = UIColor.orangeColor;
     label.text = @"普通Label";
+//    [label sizeToFit];
     [self.view addSubview:label];
+    
+    NSLog(@"frame = %@",NSStringFromCGRect(label.frame));
     
     FYLLabel *label1 = [[FYLLabel alloc] initWithFrame:CGRectMake(12, 64, 200, 40)];
     label1.backgroundColor = UIColor.orangeColor;
@@ -47,6 +50,13 @@
     label3.canPerformCopyAction = YES;
     label3.text = @"测试复制";
     [self.view addSubview:label3];
+    
+    
+    NSDictionary *dic = @{@"id":@"1",@"name":@"人",@"age":@"20",@"dog":@{@"name":@"狗",@"age":@"2"}};
+    
+    Person *p = [Person fyl_modelWithDic:dic];
+    
+  
     
 }
 
