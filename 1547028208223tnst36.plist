@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+
+<dict>
+
+<key>items</key>
+
+<array>
+
+    <dict>
+
+    <key>assets</key>
+
+    <array>
+
+        <dict>
+
+            <key>kind</key>
+
+            <string>software-package</string>
+
+            <key>url</key>
+
+            <string>https://file.laiminet.com/zc/ios_app/1547028208223tnst36.ipa</string> // 软件安装包,安装包所在的服务器路径
+
+        </dict>
+
+        <dict>
+
+            <key>kind</key>
+
+            <string>full-size-image</string>
+
+            <key>needs-shine</key>
+
+            <false/>
+
+            <key>url</key>
+
+            <string>https://file.laiminet.com/zc/ios_logo/1547027559680vfq5cg.png</string> //在itunes上点事的图片路径
+
+        </dict>
+
+        <dict>
+
+            <key>kind</key>
+
+            <string>display-image</string>
+
+            <key>needs-shine</key>
+
+            <false/>
+
+            <key>url</key>
+
+            <string>https://file.laiminet.com/zc/ios_logo/1547027603034g82wif.png</string> // 安装应用显示的图片
+
+        </dict>
+
+    </array>
+
+        <key>metadata</key>
+
+        <dict>
+            <!-- <key>update-url</key>
+
+            <string>https://test.company.com.me/ios.plist</string> // 版本更新URL -->
+
+            <key>bundle-identifier</key>
+
+            <string>com.LaiMi.produce</string> // 应用bundle-identifier
+
+            <key>bundle-version</key>
+
+            <string>1.0.0</string> // 用用版本号
+
+            <key>kind</key>
+
+            <string>software</string>
+
+            <key>title</key>
+
+            <string>铼米</string> // 安装应用显示的名称
+
+        </dict>
+
+    </dict>
+
+</array>
+
+</dict>
+
+</plist>
